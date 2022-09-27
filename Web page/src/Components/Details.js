@@ -21,7 +21,7 @@ class Details extends React.Component {
         axios(
             {
                 method: 'GET',
-                url: `http://www.localhost:3000/restaurant/GetRestaurantByID?id=63291ce905f48dc1d1ea01af`,
+                url: `https://apizom.herokuapp.com/restaurant/GetRestaurantByID?id=63291ce905f48dc1d1ea01af`,
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ restaurantData: response.data })).catch()
