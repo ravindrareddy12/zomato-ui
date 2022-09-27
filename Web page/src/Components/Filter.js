@@ -22,14 +22,14 @@ class Filter extends React.Component {
         axios(
             {
                 method: 'GET',
-                url: 'http://www.localhost:3000/city/getcitylist',
+                url: 'https://apizom.herokuapp.com/city/getcitylist',
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ locationValues: response.data })).catch()
         axios(
             {
                 method: 'GET',
-                url: 'http://www.localhost:3000/restaurant/getAllResturants',
+                url: 'https://apizom.herokuapp.com/restaurant/getAllResturants',
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ restaurantData: response.data })).catch()
