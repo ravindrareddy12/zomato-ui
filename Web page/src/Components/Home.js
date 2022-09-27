@@ -18,7 +18,7 @@ class Home extends React.Component {
         axios(
             {
                 method: 'GET',
-                url: 'http://www.localhost:3000/city/getcitylist',
+                url: 'https://apizom.herokuapp.com/city/getcitylist',
                 headers: { 'Content-Type': 'application/json' }
             }
         ).then(response => this.setState({ location: response.data })).catch()
